@@ -4,7 +4,7 @@ Report from the `github-launch` skill. Status is `pass`, `fail`, or `skip`. This
 
 | Item | Status | Note |
 | --- | --- | --- |
-| Intake recorded (kind, audience, languages, owner) | pass | Agent skill; Chinese tech-blog authors and Claude Code users; Python 3.9+; owner deer-flow, author LofiSu. |
+| Intake recorded (kind, audience, languages, owner) | pass | Agent skill; Chinese tech-blog authors and Claude Code users; Python 3.9+; owner deer-flow, author Henry Li. |
 | Secrets scan | pass | `git grep` over tracked files; no credential hits. |
 | Personal data scan | pass | No local paths, phone numbers, or private emails in tracked files. |
 | Dead demos removed or kept on purpose | pass | No framework demo or placeholder README; none removed. |

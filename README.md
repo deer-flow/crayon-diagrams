@@ -102,8 +102,8 @@ No configuration file and no environment variables. Python 3.9+ runs the helper 
 
 ## License
 
-MIT, SPDX identifier `MIT`. Copyright (c) 2026 LofiSu. See [LICENSE](LICENSE).
+MIT, SPDX identifier `MIT`. Copyright (c) 2026 Henry Li. See [LICENSE](LICENSE).
 
 ## Contact
 
-Maintained under the [DeerFlow](https://github.com/deer-flow) organization. The skill was created by Henry. Open an issue for questions, bug reports, or new examples.
+Maintained under the [DeerFlow](https://github.com/deer-flow) organization. The skill was created by [Henry Li](https://github.com/magiccube). Open an issue for questions, bug reports, or new examples.
