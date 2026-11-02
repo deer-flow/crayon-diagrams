@@ -106,4 +106,4 @@ MIT，SPDX 标识符 `MIT`。Copyright (c) 2026 LofiSu。详见 [LICENSE](LICENS
 
 ## 联系
 
-由 [DeerFlow](https://github.com/deer-flow) 组织维护，最初由 [LofiSu](https://github.com/LofiSu) 创建。问题、缺陷和新示例请提交 Issue。
+由 [DeerFlow](https://github.com/deer-flow) 组织维护，由 Henry 创建。问题、缺陷和新示例请提交 Issue。
