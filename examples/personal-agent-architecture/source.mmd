@@ -1,0 +1,21 @@
+flowchart TB
+  user["You"] --> gateway["Message Gateway"]
+  gateway --> inbox["Inbox"]
+  inbox --> front["Front Agent"]
+  source["Source"] --> trigger["Trigger"]
+  trigger --> routing["Evaluation and Subscription Routing"]
+  policy["Policy"] --> routing
+  front --> tasks["Persistent Task Records"]
+  routing --> tasks
+  tasks --> dispatch["Task Dispatching"]
+  dispatch --> worker["Worker Agent"]
+  worker -->|Progress and Results| tasks
+  tasks -->|Results or Decisions Needed| front
+  front -->|Analysis and Replies| outbox["Outbox"]
+  tasks -->|Authorized Event Alerts| outbox
+  worker --> childspace["Temporary Task Workspace"]
+  worker -->|Read on Demand| mainspace["Parent Workspace"]
+  outbox --> gateway
+  gateway -->|Results and Questions| user
+  board["Kanban"] <-->|View and Manage| tasks
+  user --> board

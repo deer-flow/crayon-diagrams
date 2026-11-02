@@ -1,0 +1,9 @@
+flowchart LR
+    S[Source] -->|Emit Trigger| T[Thread]
+    T -->|New Work Candidate| E[Eval]
+    P[Policy] -->|Assessment Rules| E
+    E -->|Accept with Mandate| N[New Ticket]
+    E -->|Ignore or Unavailable| D[Decision Record]
+    T -->|Subscription Fan-out| K[Existing Ticket]
+    N --> X[Executor]
+    K -->|Additional Context| X

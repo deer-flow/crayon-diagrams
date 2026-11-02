@@ -1,0 +1,31 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Parse Mermaid sources
+        run: python3 scripts/mmd_outline.py examples/*/source.mmd --strict
+      - name: Check SKILL.md frontmatter
+        run: |
+          grep -q '^name: crayon-diagrams$' SKILL.md
+          grep -q '^description: ' SKILL.md
+      - name: Check example layout
+        run: |
+          status=0
+          for dir in examples/*/; do
+            if [ ! -f "$dir/prompt.txt" ]; then
+              echo "missing prompt.txt: $dir"
+              status=1
+            fi
+          done
+          exit $status

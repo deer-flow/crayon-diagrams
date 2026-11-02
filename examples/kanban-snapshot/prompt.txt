@@ -1,0 +1,22 @@
+Generator: built-in image_gen
+Use case: infographic-diagram
+Create a finished Chinese technical blog illustration explaining a personal agent Kanban. White background, portrait 2:3, ideally 1024x1536 or higher. Charming restrained wax crayon drawing, hand-drawn outlines and VERY LEGIBLE handwritten Chinese lettering. Soft blue, amber, mint, lavender crayon fills, dark charcoal text. Clean editorial diagram, not photorealism. Large text readable on mobile, abundant white space. No drop shadows, no dark background, no decoration unrelated to content.
+
+This is a SNAPSHOT of different tasks, NOT a sequential workflow. DO NOT draw arrows between status groups. Compose:
+Top heading exactly "多项任务，一眼看清"
+Small subtitle "同一时刻 · 不同状态"
+Main board: TWO columns and THREE rows of clearly separated pale crayon colored status regions. Inside each region, one or two white paper task cards. Equal widths. Hand-drawn simple icons beside headings. These exact texts:
+Top left status "排队" and single card "升级兼容性测试"
+Top right status "执行中" and single card with title "BABA 下跌研究" and smaller second line "关联主任务：BABA 监控"
+Middle left status "等待事件" and two little cards "其他价格关注" and "依赖版本跟踪"
+Middle right status "等待你" and card title "确认破坏性变更" and smaller line "需要你的决定"
+Bottom left status "待验收" and card "升级 PR"
+Bottom right status "已完成" and card "上一版影响报告"
+
+Below board, separated by generous whitespace, show ONE expanded master task card spanning width, title "展开主任务：BABA 监控". Inside exactly three concise horizontal rows, with simple icons:
+green check "跌破条件已命中"
+green check "快讯已送达"
+blue spinner or clock "等待研究与分析交付"
+This card is an expanded detail example, not another column and not a completion of the entire delegation. Make the working BABA research card and this parent task detail share a subtle blue accent or tiny matching link icon, NO long crossing connector.
+
+At very bottom a friendly hand-drawn small person with label "You", next to three outlined small action buttons labeled "补充要求" "调整优先级" "停止任务". These are actions available on task cards. No giant callouts, no extra paragraphs. This is our own proposed personal agent board, NOT a recreation or screenshot of DeepSeek Panel. Do not include DeepSeek logos or product names. No English other than BABA, PR, You; no numbering. Exact Chinese text, comfortable visual hierarchy, not dense.

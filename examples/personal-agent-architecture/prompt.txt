@@ -1,0 +1,31 @@
+Generator: built-in image_gen
+
+Use case: infographic-diagram / style-transfer.
+Create a NEW complete Personal Agent architecture diagram for a technical blog. The reference image is STYLE ONLY: match its pure white background, genuinely handwritten English lettering, graphite/crayon outlines, pale blue/green/orange wax-crayon fills, slightly irregular rounded boxes and curved arrows. Do NOT copy its graph or labels. No printed fonts. Phone-readable PORTRAIT composition, approximately 3:4, high resolution, spacious labels that wrap cleanly. No title, no legend, no decorative prose. Small orange stick-person beside "You".
+
+This new diagram connects messaging, subscriptions, and persistent task management. Preserve the following directed graph exactly. Each named node appears ONCE. Use large legible lettering. Nodes:
+You; Message Gateway; Inbox; Front Agent; Source; Trigger; Evaluation and Subscription Routing; Policy; Persistent Task Records; Task Dispatching; Worker Agent; Outbox; Temporary Task Workspace; Parent Workspace; Kanban.
+
+Edges:
+You → Message Gateway.
+Message Gateway → You labelled "Results and Questions".
+Message Gateway → Inbox.
+Inbox → Front Agent.
+Source → Trigger.
+Trigger → Evaluation and Subscription Routing.
+Policy → Evaluation and Subscription Routing.
+Front Agent → Persistent Task Records.
+Evaluation and Subscription Routing → Persistent Task Records.
+Persistent Task Records → Task Dispatching.
+Task Dispatching → Worker Agent.
+Worker Agent → Persistent Task Records labelled "Progress and Results".
+Persistent Task Records → Front Agent labelled "Results or Decisions Needed".
+Front Agent → Outbox labelled "Analysis and Replies".
+Persistent Task Records → Outbox labelled "Authorized Event Alerts".
+Outbox → Message Gateway.
+Worker Agent → Temporary Task Workspace.
+Worker Agent → Parent Workspace labelled "Read on Demand".
+Kanban ↔ Persistent Task Records labelled "View and Manage".
+You → Kanban.
+
+Layout guidance: central vertical spine Message Gateway, Inbox, Front Agent, Persistent Task Records, Task Dispatching, Worker Agent, with workspaces at bottom. Put You upper left; Kanban in left margin around Task Records, with a clean outer left route from You. Put Outbox upper/right of Front Agent and connect a clean return route to Gateway. Put Source → Trigger → Evaluation and Subscription Routing in a right-side vertical lane, with Policy adjacent to Routing, converging into Task Records. Let the Source lane begin lower than Outbox to avoid conflict. Route return arrows alongside their forward arrows as separate visible curves. Task Records should be the central visually prominent orange node, Kanban orange, messaging nodes blue, event/routing nodes green, workspaces pale blue. Reserve clear lanes for Task Records → Outbox fast alert path and Worker → Task Records progress path. Avoid arrow crossings wherever possible; no line through text or nodes. The 2 workspaces at bottom must be distinctly separate; no arrow between them. No spurious arrows. EVERY graph connection above must be visible with correct arrowhead. Handwritten text can wrap into 2 or 3 lines for long labels. White background, no cream tint or shadows.

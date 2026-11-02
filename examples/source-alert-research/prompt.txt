@@ -1,0 +1,14 @@
+Generator: built-in image_gen
+Use case: infographic-diagram. Create a very simple portrait 2:3 Chinese technical-blog diagram on pure white, wax-crayon fills, dark hand-drawn outlines, large highly legible handwritten lettering, matching the attached reference STYLE ONLY. Do NOT reuse its complex topology. Mobile-first; lots of whitespace, minimal words, 4 main cards down the page.
+
+Title exactly "先发快讯，再做研究".
+Four main rounded cards stacked vertically, occupying the left/center 70% of the width:
+1 pale blue: heading "Source 监控", two short lines "交易时段 · BABA < $100" and "等待时，模型不运行". A tiny price-chart icon.
+Down arrow labeled "条件命中".
+2 pale orange: heading "快讯入 Outbox", short message "已跌破，分析稍后". From this card a SHORT orange right arrow to a small hand-drawn person holding a phone, label "You". Arrow label "发送". This rightward delivery branch must NOT connect to the research step.
+From card 2 a separate DOWN arrow to card 3, label "入队即启动". This means research starts upon queueing, not upon notification delivery.
+3 pale green: heading "Executor Agent", subheading "临时深度研究"; only two short lines below "独立 Workspace" and "复用主任务资料". Tiny magnifier and folder icon.
+Down arrow to card 4.
+4 pale blue: heading "Main Agent → Outbox", two short lines "原因 · 行情 · 多空" and "交付分析". Short blue right arrow to another small drawing of the same person holding a phone labeled "You".
+
+No other boxes, no swim lanes, no return arrows, no database nodes, no extra title or subtitles, no invented details. Flow must be unambiguous. 4 boxes and 2 small recipient icons maximum. Main spine vertical, delivery branches short. English terms exactly Source, BABA, Outbox, Executor Agent, Workspace, Main Agent, You. Do NOT use Front Agent or Worker Agent. The condition is a simplified threshold example; do not invent real market prices or data. Keep each requested text exact and large.

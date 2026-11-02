@@ -1,0 +1,11 @@
+Generator: built-in image_gen
+Create a simple vertical illustrated process for a Chinese technical blog, pure WHITE background, large HANDWRITTEN Chinese and English, colored wax CRAYON outlines and pale crayon fill, matching reference style only. Portrait 2:3, phone readable, five spacious stacked rounded cards with simple downward arrows, NOT a sequence diagram. Minimal text, no swimlanes, no tiny text. Small friendly orange person at top beside speech bubble exact text "阿里跌破 100 时，告诉我最新市场综合判断". Then five cards, each a small sketch icon and exactly these title and subtitle:
+1 title "建立关注" subtitle "监控 Ticket · Subscription" (clipboard icon)
+2 title "等待行情" subtitle "Source 检测 BABA < $100" and one short note "仅约定交易时段" (price line icon)
+3 title "先发快讯" subtitle "Outbox 入队，随后推动研究" (bell icon)
+4 title "评估接单" subtitle "Eval + Policy → 研究 Ticket" and short note "接受后才开始研究" (checklist icon)
+5 title "研究并交付" subtitle "Executor · Ticket 独立目录" and short text "下跌原因 · 市场行情 · 多空情绪" (report icon).
+Below final card a short arrow to a message bubble "Outbox → You" with little person.
+Between cards 2 and 3 label arrow "Trigger". Between cards 4 and 5 label arrow "Assignment". Other arrows unlabelled.
+Footer small but readable "本文扩展示例 · 快讯投递与研究独立推进".
+Blue cards 1/2, orange card 3, green cards 4/5. Dark graphite handwritten lettering, no printed font, no extra technical components, no decorative title. Preserve whitespace and few words.

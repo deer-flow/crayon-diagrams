@@ -1,0 +1,13 @@
+flowchart LR
+  U[You] --> C[Channel]
+  subgraph G[Message Gateway]
+    I[Inbox]
+    O[Outbox]
+  end
+  C --> I
+  I --> F[Front Agent]
+  F -->|Assignments and Corrections| W[Worker]
+  W -->|Results and Questions| F
+  F --> O
+  O --> C
+  C --> U

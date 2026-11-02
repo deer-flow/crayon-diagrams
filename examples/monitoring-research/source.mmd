@@ -1,0 +1,25 @@
+sequenceDiagram
+    participant U as You
+    participant M as Main Agent (Main Session)
+    participant E as Engine
+    participant S as Market Data Source
+    participant X as Executor Sessions
+    participant O as Outbox
+    U->>M: Monitor BABA below USD 100, with agreed research
+    M->>E: Accept monitoring work through Eval
+    E->>X: Assignment for monitoring Ticket
+    X->>S: Configure condition and subscribe to its Thread
+    Note over E,X: Each Ticket has a Mandate, Session and directory
+    Note over S,X: Monitoring waits without a running model turn
+    S->>E: Threshold crossed: Trigger on subscribed Thread
+    E->>O: Queue authorized alert first (extension)
+    E->>X: Deliver Input to monitoring Ticket
+    E->>M: Assess new research candidate against Policy
+    O-->>U: Threshold crossed, analysis requested
+    M->>E: Accept research within the enabled rule
+    E->>X: Assignment for a new research Ticket
+    Note over X: Research uses its own Ticket directory and cited materials
+    X->>E: Report findings and queue authorized reply
+    E->>O: Queue analysis
+    O->>U: Price drivers, market conditions and sentiment
+    Note over E,O: Ticket end and message delivery are separate facts
